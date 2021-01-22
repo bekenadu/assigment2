@@ -6,8 +6,11 @@ function withdrawal(amount,balan) {
     if (balan<100){
         console.log("you have reached the minimum for withdawal request")
     }
-    else if(balan>=100){
-        console.log("your remanin balance is" + (balan - amount));}
+    else if (amount>balan){
+        console.log("you dont have that much in youre current balance")
+    }
+    else if(balan>=100 | amount<=balan){
+        console.log("Acsses granted your remanin balance is" + (balan - amount));}
     else if (amount>5000){
         console.log("cant withdarl all that in one withdrawal");
     }
