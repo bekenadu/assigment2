@@ -4,10 +4,10 @@ function Deposit(amount,balan) {
 }
 function withdrawal(amount,balan) { 
     if (balan<100){
-        console.log("you have reached the minimum for withdawal request")
+        console.log(" asccsess you have reached the minimum for withdawal request")
     }
     else if (amount>balan){
-        console.log("you dont have that much in youre current balance")
+        console.log("accsess deniedyou dont have that much in youre current balance")
     }
     else if(balan>=100 | amount<=balan){
         console.log("Acsses granted your remanin balance is" + (balan - amount));}
